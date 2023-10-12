@@ -1,0 +1,5 @@
+'use client';
+// import { useParallax } from "react-scroll-parallax";
+// export default (props)=> useParallax(props).ref;
+import { Parallax } from "react-scroll-parallax";
+export default Parallax;

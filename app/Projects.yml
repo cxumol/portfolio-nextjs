@@ -1,0 +1,163 @@
+title : "Featured Projects"
+id: "Projects"
+# content: |
+#   Personal Projects Demo
+overall_style: "wrapper style1 align-center large onload-content-fade-up"
+items_style: ""
+items:
+  # feature item loop
+
+  - title : "Admired AI APIs"
+    id: "admired-ai"
+    style : "style1 medium onscroll-content-fade-right" # color4
+    keywords: ["Python", "TypeScript", "Go", "PostgreSQL", "Redis", "Deno", "Web App"]
+    buttons: 
+      - label: "Hug Me"
+        link: "https://db-hfspace-91.deno.dev/query"
+        comment: |
+          Admired free AI APIs and apps, accelerated by GPUs or loved by many.
+        # Explore a programmatically selected collection of 
+    image: "images/hf-selected.jpg"
+    content : "Discover high-quality HuggingFace AI services."
+
+  - title : "URL Link Catalog"
+    id : "urlinkcat"
+    style : "style1 major invert orient-right onscroll-content-fade-right" # color5
+    keywords: ["SvelteJS", "Cloudflare", "Serverless", "KV Database", "Web App"]
+    buttons: 
+      - label: "Try now"
+        link: "https://urlinkcat.pages.dev/#demo"
+        comment: |
+          Easy to use.
+      - label: "GitHub Repo"
+        link: "https://github.com/cxumol/URLinkCat"
+        comment: |
+          Detailed README instructions.
+    image: "images/cloud_bookmark_3.jpg"
+    content : |
+      Access and manage you bookmark anywhere and anytime. Multi-user. Cloud sync.
+    # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge. 
+
+  - title : "Entity Network Graphs"
+    id: "ngraph"
+    style : "style1 major onscroll-content-fade-left" # color1
+    keywords: ["WebGL", "THREE.js", "Data Validation", "Interactive", "Literature", "NLP", "Graph Theory", "Web App"]
+    buttons: 
+      - label: "Explore Books"
+        link: "https://urlinkcat.pages.dev/#e-ngraph-official"
+        comment: |
+          Books in English (US & UK) and Chinese (Traditional & Simplified). 
+        #  Click here to check out the collection page of 3D interactive graphs available in books written in English (US & UK) as well as Chinese (Traditional & Simplified). 
+        # <br> N.B. Just click any icon on the collection page.
+      - label: "Video"
+        link: "https://www.youtube.com/watch?v=-LQotruRzCo"
+        comment: |
+          Video demo on YouTube (in Chinese).
+    image: "images/marble-network-graph.jpg"
+    content : |
+      Enable new insights for readers. 
+      Visualize relationships between literary elements using 3D interactive graphs. 
+
+  - title : "EY Data Challenge"
+    id: "ey-challenge"
+    style : "style1 medium invert orient-right onscroll-content-fade-right"
+    # onscroll-fade-in 
+    keywords: ["Teamwork", "Remote Sensing", "Data Processing", "Data Analysis", "Regression"]
+    buttons: 
+      - label: "Details"
+        link: "https://challenge.ey.com/challenges/level-2-crop-forecasting-qEk17wFWyq"
+        comment: |
+          2023 EY Open Science Data Challenge・Certificate of completion
+    image: "images/EY-challenge-v2-3.jpg"
+    content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team, won Certificate of completion."   
+    
+  - title : "Propeller evolution"
+    id : "propeller"
+    style : "style1 major image-position-center onscroll-content-fade-left" #color7
+    keywords: ["3D Modeling", "Procedual Modeling", "Animation", "Blender", "Geometry Node"]
+    buttons: 
+      - label: "Video"
+        link: "https://www.youtube.com/watch?v=TARskVoL9QM"
+        comment: |
+          on YouTube
+    image: "images/propeller_all_mid.jpg"
+    content : "Educational CG short video powered by Blender Geometry Nodes."
+
+  - title : "tg-search"
+    id: "tg-search"
+    style : "style1 major invert orient-right invert onscroll-content-fade-right" #color6
+    keywords: ["Influencial", "Early Works", "Offline", "Web App"]
+    buttons: 
+      - label: "GitHub Repo"
+        link: "https://github.com/cxumol/tg-search"
+        comment: |
+          Appreciated by over 100 technical professionals on GitHub.
+    image: "images/tg_search_169.jpg"
+    content : |
+      Search Chinese, Japanese, and Thai words offline over Telegram message history
+    # , using browser-native HTML/CSS/JavaScript and working offline without external dependencies.
+
+  - title : "LongRiver"
+    id: "long-river"
+    style : "style1 major onscroll-content-fade-left" #color1
+    keywords: ["Python", "Data Collection", "Data Validation", "Up-to-date", "Web Service", "Public Welfare", "HTML/CSS/JS"]
+    buttons: 
+      - label: "Online Service"
+        link:  "https://cxumol.github.io/LongRiver/"
+        comment: |
+          Observe the hydrological history of Yangtze River here.
+      - label: "GitHub Repo"
+        link:  "https://github.com/cxumol/LongRiver"
+        comment: |
+          Open-source code and open-access data.
+    image: "images/river_wave.jpg"
+    content : |
+      Long-term hydrological data of Yangtze River.   
+      Real-time data collection.   
+      Visualization.
+    # An open source online service to provide accessible 
+
+  - title : "Tg2md Bot"
+    id: "tg-md"
+    style : "style1 major  invert orient-right onscroll-content-fade-right" #color4
+    keywords: ["Algorithm", "Text Processing", "Chatbot"]
+    buttons: 
+      - label: "Blog Post"
+        link: "https://xirtam.cxumol.com/tg-to-md/"
+        comment: |
+          Algorithm explained.
+        #  Read the blog post about how its algorithm is developed and optimized.
+    image: "images/typewriter1-wave_beu.jpg"
+    content : "A bot who converts Telegram rich text to Markdown."
+
+  - title : "Terminology Highlighter"
+    id: "term-highlighter"
+    style : "style1 major onscroll-content-fade-left"
+    keywords: ["WebAssembly", "DOM manipulation", "NLP","JavaScript", "Python"]
+    buttons: 
+      - label: "Example article"
+        link:  "https://pattern.swarma.org/article/132"
+        comment: |
+          Read an example article using our highlighter.
+      - label: "GitHub Repo"
+        link:  "https://github.com/cxumol/jieba-wasm-html"
+        comment: |
+          Open-source Chinese text segmentation tool on WebAssembly on HTML.
+    image: "images/text-highlighter-v2.jpg"
+    content : "A terminology highlighter to improve readability on a science website, using WASM for fast and accurate Chinese text segmentation."
+  
+  - title : "Portfolio Website"
+    id: "this-portfolio"
+    # style : "style1 major onscroll-content-fade-left"
+    keywords: ["React", "Next.js", "TailWind CSS", "Hugo"]
+    buttons: 
+      - label: "This Website"
+        link:  "/"
+        comment: |
+          You are already here.
+      - label: "Earlier Version"
+        link:  "https://st-professional-hugo.netlify.app/"
+        comment: |
+          A previous version of my portfolio made with Hugo.
+    image: "images/portfolio-website-rgba-v2.png"
+    content : "**Congrats!** You've gone through my portfolio. Hope you had a fun time. Please don't hesitate contact me by email if you consider hiring me."
