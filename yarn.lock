@@ -227,6 +227,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/js-yaml@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.npmjs.org/@types/js-yaml/-/js-yaml-4.0.7.tgz"
+  integrity sha512-RJZP9WAMMr1514KbdSXkLRrKvYQacjr1+HWnY8pui/uBTBoSgD9ZGR17u/d4nb9NpERp0FkdLBe7hq8NIPBgkg==
+
 "@types/json-schema@*", "@types/json-schema@^7.0.8":
   version "7.0.13"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.13.tgz"

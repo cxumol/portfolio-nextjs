@@ -66,11 +66,11 @@ export default function MyCard({ data }) {
   return (
     <div
       ref={containerRef}
-      className="proj pl-2 py-32 bg-cover  m-4
+      className="proj sm:pl-2 py-8 bg-cover  m-4
       h-full
       //h-[80-vh]
       rounded-lg 
-       md:py-24 sm:py-12
+      md:py-24 sm:py-12
       lg:h-full lg:py-64
       bg-scroll bg-transparent
       border border-solid ring-2 ring-neutral-300"
@@ -79,7 +79,7 @@ export default function MyCard({ data }) {
     >
       <div
         className={`Card-read ${isVisible ? "slideLeft" : "invisible"}
-        z-10 p-4 w-3/4 
+        z-10 p-4 w-full  sm:w-3/4 
       rounded-md border
       shadow backdrop-blur 
       text-black prose lg:prose-lg

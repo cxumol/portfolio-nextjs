@@ -5,8 +5,13 @@ import Nav from "./Nav.jsx";
 
 import yaml from "js-yaml";
 const getProj = async () => {
-  const config = await import(`./Projects.yml`);
-  return yaml.load(config.default);
+  try {
+    const config = await require(`./Projects.yml`);
+    return yaml.load(config.default);
+  } catch (error) {
+    const proj = await require("./Projects.yml");
+    return proj;
+  }
 };
 
 const projCards = (proj: any) =>
@@ -18,14 +23,13 @@ const projCards = (proj: any) =>
     </div>
   ));
 
-function SvgAlert(props) {
+function SvgAlert() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       className="stroke-info shrink-0 w-6 h-6"
-      {...props}
     >
       <path
         strokeLinecap="round"
@@ -90,7 +94,7 @@ export default async function Home() {
       <div tabIndex={0} className="collapse bg-base-100">
         <div className="collapse-title text-xl font-medium flex items-center">
           <SvgAlert />
-          <span>&nbsp; &#9; Who's S. T.?</span>
+          <span>&nbsp; &#9; Who is S. T.?</span>
         </div>
         <div className="collapse-content">
           <p className="alert m-2 bg-base-200">
