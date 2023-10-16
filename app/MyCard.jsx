@@ -3,6 +3,14 @@ import "./MyCard.css";
 import Markdown from "react-markdown";
 import { useRef, useEffect, useState } from "react";
 
+const bgClearAmber =
+  "bg-gradient-to-r from-amber-200/80 to-amber-50/10 rounded-md";
+const bgClearCyan =
+  "bg-gradient-to-r from-cyan-200/80 to-cyan-50/10 rounded-md";
+const bgClearGray =
+  "bg-gradient-to-r from-gray-200/80 to-gray-50/10 rounded-md";
+const bgClear = bgClearGray;
+
 function buttonGroups(buttons) {
   // console.log(buttons);
   return buttons.map((btn) => (
@@ -13,9 +21,7 @@ function buttonGroups(buttons) {
       >
         {btn.label}
       </a>
-      <div className="link-comments">
-        <Markdown>{btn.comment}</Markdown>
-      </div>
+      <Markdown className={bgClear}>{btn.comment}</Markdown>
     </div>
   ));
 }
@@ -73,7 +79,8 @@ export default function MyCard({ data }) {
       md:py-24 sm:py-12
       lg:h-full lg:py-64
       bg-scroll bg-transparent
-      border border-solid ring-2 ring-neutral-300"
+      border border-solid ring-2 ring-neutral-300
+      bg-no-repeat bg-center sm:bg-left focus-within:bg-center"
       style={{ backgroundImage: `url(${data.image})` }} // , backgroundSize: "100%"
       data-theme="light"
     >
@@ -83,13 +90,15 @@ export default function MyCard({ data }) {
       rounded-md border
       shadow backdrop-blur 
       text-black prose lg:prose-lg
+      
       `}
       >
         <h2 className="text-inherit">{data.title}</h2>
         {badgeGroups(data.keywords)}
         {/* <p> */}
-        <Markdown>{data.content}</Markdown>
+        <Markdown className={bgClear}>{data.content}</Markdown>
         {/* </p> */}
+        {/* from-cyan-200 via-blue-200 to-teal-300 */}
         <div className={"link-and-explain"}>{buttonGroups(data.buttons)}</div>
       </div>
     </div>

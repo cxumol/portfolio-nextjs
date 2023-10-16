@@ -41,7 +41,7 @@ items:
   - title : "Entity Network Graphs"
     id: "ngraph"
     style : "style1 major onscroll-content-fade-left" # color1
-    keywords: ["WebGL", "THREE.js", "Data Validation", "Interactive", "Literature", "NLP", "Graph Theory", "Web App"]
+    keywords: ["WebGL", "THREE.js", "Data Visualization", "Interactive", "Literature", "NLP", "Graph Theory", "Web App"]
     buttons: 
       - label: "Explore Books"
         link: "https://urlinkcat.pages.dev/#e-ngraph-official"
@@ -100,7 +100,7 @@ items:
   - title : "LongRiver"
     id: "long-river"
     style : "style1 major onscroll-content-fade-left" #color1
-    keywords: ["Python", "Data Collection", "Data Validation", "Up-to-date", "Web Service", "Public Welfare", "HTML/CSS/JS"]
+    keywords: ["Python", "Data Collection", "Data Visualization", "Up-to-date", "Web Service", "Public Welfare", "HTML/CSS/JS"]
     buttons: 
       - label: "Online Service"
         link:  "https://cxumol.github.io/LongRiver/"
@@ -146,13 +146,13 @@ items:
     image: "images/text-highlighter-v2.jpg"
     content : "A terminology highlighter to improve readability on a science website, using WASM for fast and accurate Chinese text segmentation."
   
-  - title : "Portfolio Website"
+  - title : "Portfolio Websites"
     id: "this-portfolio"
     # style : "style1 major onscroll-content-fade-left"
     keywords: ["React", "Next.js", "TailWind CSS", "Hugo"]
     buttons: 
       - label: "This Website"
-        link:  "/"
+        link:  "#"
         comment: |
           You are already here.
       - label: "Earlier Version"
@@ -160,4 +160,4 @@ items:
         comment: |
           A previous version of my portfolio made with Hugo.
     image: "images/portfolio-website-rgba-v2.png"
-    content : "**Congrats!** You've gone through my portfolio. Hope you had a fun time. Please don't hesitate contact me by email if you consider hiring me."
+    content : "**Congrats!** You've gone through my portfolio. Hope you had a fun time. Please don't hesitate to contact me by email if you consider hiring me."
