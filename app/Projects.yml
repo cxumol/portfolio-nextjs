@@ -74,7 +74,7 @@ items:
   - title : "Propeller evolution"
     id : "propeller"
     style : "style1 major image-position-center onscroll-content-fade-left" #color7
-    keywords: ["3D Modeling", "Procedual Modeling", "Animation", "Blender", "Geometry Node"]
+    keywords: ["3D Modeling", "Procedual Modeling", "Animation", "Blender", "Geometry Node", "Video Production" ]
     buttons: 
       - label: "Video"
         link: "https://www.youtube.com/watch?v=TARskVoL9QM"
