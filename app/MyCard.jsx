@@ -93,7 +93,7 @@ export default function MyCard({ data }) {
       
       `}
       >
-        <h2 className="text-inherit">{data.title}</h2>
+        <h2 className="text-inherit font-serif">❖ {data.title}</h2>
         {badgeGroups(data.keywords)}
         {/* <p> */}
         <Markdown className={bgClear}>{data.content}</Markdown>

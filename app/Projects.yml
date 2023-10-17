@@ -62,14 +62,14 @@ items:
     id: "ey-challenge"
     style : "style1 medium invert orient-right onscroll-content-fade-right"
     # onscroll-fade-in 
-    keywords: ["Teamwork", "Remote Sensing", "Data Processing", "Data Analysis", "Regression"]
+    keywords: ["Teamwork", "Remote Sensing", "Data Processing", "Data Analysis", "Regression","Contest"]
     buttons: 
       - label: "Details"
         link: "https://challenge.ey.com/challenges/level-2-crop-forecasting-qEk17wFWyq"
         comment: |
           2023 EY Open Science Data Challenge・Certificate of completion
     image: "images/EY-challenge-v2-3.jpg"
-    content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team, won Certificate of completion."   
+    content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team."   
     
   - title : "Propeller evolution"
     id : "propeller"
@@ -100,7 +100,7 @@ items:
   - title : "LongRiver"
     id: "long-river"
     style : "style1 major onscroll-content-fade-left" #color1
-    keywords: ["Python", "Data Collection", "Data Visualization", "Up-to-date", "Public Welfare", "HTML/CSS/JS", "Web Service"]
+    keywords: ["Python", "HTML/CSS/JS", "Data Collection", "Data Visualization", "Up-to-date", "Public Welfare", "Web Service"]
     buttons: 
       - label: "Online Service"
         link:  "https://cxumol.github.io/LongRiver/"
@@ -143,7 +143,7 @@ items:
         comment: |
           Open-source Chinese text segmentation tool on WebAssembly on HTML.
     image: "images/text-highlighter-v2.jpg"
-    content : "A terminology highlighter to improve readability on a science website, using WASM for fast and accurate Chinese text segmentation."
+    content : "A terminology highlighter to improve readability on a science website, implementing fast and accurate Chinese text segmentation."
   
   - title : "Portfolio Websites"
     id: "this-portfolio"
@@ -159,4 +159,4 @@ items:
         comment: |
           A previous version of my portfolio made with Hugo.
     image: "images/portfolio-website-rgba-v2.png"
-    content : "**Congrats!** You've gone through my portfolio. Hope you had a fun time. Please don't hesitate to contact me by email if you consider hiring me."
+    content : "**Congrats!** You've gone through my portfolio. Hope you had a fun time. Please don't hesitate to email me if you consider hiring me."

@@ -98,7 +98,8 @@ export default async function Home() {
         </div>
         <div className="collapse-content">
           <p className="alert m-2 bg-base-200">
-            A fresh grad seeking opportunities to work.
+            A fresh grad (Master of Science, 2023) seeking opportunities to
+            work.
           </p>
           {/* <p className="alert">
             A passionate life-time learner in multile displinaries.
