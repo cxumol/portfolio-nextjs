@@ -91,7 +91,7 @@ items:
       - label: "GitHub Repo"
         link: "https://github.com/cxumol/tg-search"
         comment: |
-          Appreciated by over 100 technical professionals on GitHub.
+          Appreciated by over **100** technical professionals on GitHub.
     image: "images/tg_search_169.jpg"
     content : |
       Search Chinese, Japanese, and Thai words offline over Telegram message history
@@ -100,7 +100,7 @@ items:
   - title : "LongRiver"
     id: "long-river"
     style : "style1 major onscroll-content-fade-left" #color1
-    keywords: ["Python", "Data Collection", "Data Visualization", "Up-to-date", "Web Service", "Public Welfare", "HTML/CSS/JS"]
+    keywords: ["Python", "Data Collection", "Data Visualization", "Up-to-date", "Public Welfare", "HTML/CSS/JS", "Web Service"]
     buttons: 
       - label: "Online Service"
         link:  "https://cxumol.github.io/LongRiver/"
@@ -113,8 +113,7 @@ items:
     image: "images/river_wave.jpg"
     content : |
       Long-term hydrological data of Yangtze River.   
-      Real-time data collection.   
-      Visualization.
+      Real-time data collection and visualization.
     # An open source online service to provide accessible 
 
   - title : "Tg2md Bot"
@@ -133,7 +132,7 @@ items:
   - title : "Terminology Highlighter"
     id: "term-highlighter"
     style : "style1 major onscroll-content-fade-left"
-    keywords: ["WebAssembly", "DOM manipulation", "NLP","JavaScript", "Python"]
+    keywords: ["WebAssembly", "DOM manipulation", "NLP","JavaScript", "Python", "Feature"]
     buttons: 
       - label: "Example article"
         link:  "https://pattern.swarma.org/article/132"
@@ -149,7 +148,7 @@ items:
   - title : "Portfolio Websites"
     id: "this-portfolio"
     # style : "style1 major onscroll-content-fade-left"
-    keywords: ["React", "Next.js", "TailWind CSS", "Hugo"]
+    keywords: ["React", "Next.js", "TailWind CSS", "Hugo", "Website"]
     buttons: 
       - label: "This Website"
         link:  "#"

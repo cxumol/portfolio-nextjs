@@ -29,7 +29,7 @@ function badgeGroups(keywords) {
   // console.log(buttons);
   return keywords.map((kw) => (
     <div
-      className="badge badge-primary badge-outline m-1"
+      className="badge badge-primary badge-outline m-1 bg-lime-50/60 "
       key={`${kw}-${Date.now()}`}
     >
       {kw}
