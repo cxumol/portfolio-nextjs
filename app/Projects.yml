@@ -35,7 +35,7 @@ items:
           Detailed README instructions.
     image: "images/cloud_bookmark_3.jpg"
     content : |
-      Access and manage you bookmark anywhere and anytime. Multi-user. Cloud sync.
+      Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
     # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge. 
 
   - title : "Entity Network Graphs"
