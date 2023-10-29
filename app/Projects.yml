@@ -43,12 +43,15 @@ items:
     style : "style1 major onscroll-content-fade-left" # color1
     keywords: ["WebGL", "THREE.js", "Data Visualization", "Interactive", "Literature", "NLP", "Graph Theory", "Web App"]
     buttons: 
-      - label: "Explore Books"
+      - label: "Explore books"
         link: "https://urlinkcat.pages.dev/#e-ngraph-official"
         comment: |
-          Books in English (US & UK) and Chinese (Traditional & Simplified). 
+          Play with books in English (US & UK) and Chinese (Traditional & Simplified). 
         #  Click here to check out the collection page of 3D interactive graphs available in books written in English (US & UK) as well as Chinese (Traditional & Simplified). 
         # <br> N.B. Just click any icon on the collection page.
+      - label: "Slide Show"
+        link: "https://docs.google.com/presentation/d/1m962XA3_1IPe46uxF9gEBOtUw8dIdHNhaKPQ9TGVGs8/?usp=sharing"
+        comment: "Brief yet comprehensive introduction."
       - label: "Video"
         link: "https://www.youtube.com/watch?v=-LQotruRzCo"
         comment: |
