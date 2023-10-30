@@ -28,11 +28,11 @@ items:
       - label: "Try now"
         link: "https://urlinkcat.pages.dev/#demo"
         comment: |
-          Easy to use.
-      - label: "GitHub Repo"
-        link: "https://github.com/cxumol/URLinkCat"
-        comment: |
-          Detailed README instructions.
+          Easy to use; Open to everyone.
+      # - label: "GitHub Repo"
+      #   link: "https://github.com/cxumol/URLinkCat"
+      #   comment: |
+      #     Detailed README instructions.
     image: "images/cloud_bookmark_3.jpg"
     content : |
       Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
@@ -94,7 +94,7 @@ items:
       - label: "GitHub Repo"
         link: "https://github.com/cxumol/tg-search"
         comment: |
-          Appreciated by over **100** technical professionals on GitHub.
+          The Star - Appreciated by **140+** technical professionals on GitHub.
     image: "images/tg_search_169.jpg"
     content : |
       Search Chinese, Japanese, and Thai words offline over Telegram message history
@@ -112,7 +112,7 @@ items:
       - label: "GitHub Repo"
         link:  "https://github.com/cxumol/LongRiver"
         comment: |
-          Open-source code and open-access data.
+          Where open-source code meets open-access data.
     image: "images/river_wave.jpg"
     content : |
       Long-term hydrological data of Yangtze River.   
@@ -153,13 +153,17 @@ items:
     # style : "style1 major onscroll-content-fade-left"
     keywords: ["React", "Next.js", "TailWind CSS", "Hugo", "Website"]
     buttons: 
+      - label: "Email"
+        link:  "javascript:alert('Email address is redacted for privacy concerns. Please find my email address on resume. Thanks.')"
+        comment: |
+          Don't hesitate to email me if you consider hiring me. 
       - label: "This Website"
         link:  "#"
         comment: |
           You are already here.
-      - label: "Earlier Version"
+      - label: "Earlier Portfolio Version"
         link:  "https://st-professional-hugo.netlify.app/"
         comment: |
           A previous version of my portfolio made with Hugo.
     image: "images/portfolio-website-rgba-v2.png"
-    content : "**Congrats!** You've gone through my portfolio. Hope you had a fun time. Please don't hesitate to email me if you consider hiring me."
+    content : "**Congrats!** You've gone through my portfolio built with modern front-end workflow. Hope you had a fun time."
