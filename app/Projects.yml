@@ -16,7 +16,9 @@ items:
         link: "https://db-hfspace-91.deno.dev/query"
         comment: |
           Admired free AI APIs and apps, accelerated by GPUs or loved by many.
-        # Explore a programmatically selected collection of 
+      - label: "Slide Show"
+        link: "https://docs.google.com/presentation/d/1cWZpFPVv41s1snCGEYejx1iicL1CBsHsaH67dNmUgR8/?usp=sharing"
+        comment: "Why everyone wants to use this app?"
     image: "images/hf-selected.jpg"
     content : "Discover high-quality HuggingFace AI services."
 
