@@ -56,7 +56,7 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
       // Stop observing the video element
       observer.unobserve(video);
     };
-  }, []);
+  }, [vidUrl]);
 
   if (isSafari || isIOS) {
     return (

@@ -13,18 +13,33 @@ const bgClearGray =
 const bgClear = bgClearGray;
 
 function buttonGroups(buttons) {
-  // console.log(buttons);
-  return buttons.map((btn) => (
-    <div className="link-item" key={btn.label}>
-      <a
-        className="border border-solid border-grey-500 hover:border-black btn glass"
-        href={btn.link}
-      >
-        {btn.label}
-      </a>
-      <Markdown className={bgClear}>{btn.comment}</Markdown>
-    </div>
-  ));
+  return buttons.map((btn) => {
+    if (btn.link.startsWith("javascript:")) {
+      return (
+        <div className="link-item" key={btn.label}>
+          <button
+            className="border border-solid border-grey-500 hover:border-black btn glass"
+            onClick={new Function(btn.link.substring(11))}
+          >
+            {btn.label}
+          </button>
+          <Markdown className={bgClear}>{btn.comment}</Markdown>
+        </div>
+      );
+    } else {
+      return (
+        <div className="link-item" key={btn.label}>
+          <a
+            className="border border-solid border-grey-500 hover:border-black btn glass"
+            href={btn.link}
+          >
+            {btn.label}
+          </a>
+          <Markdown className={bgClear}>{btn.comment}</Markdown>
+        </div>
+      );
+    }
+  });
 }
 function badgeGroups(keywords) {
   // console.log(buttons);
@@ -52,10 +67,11 @@ const useElementOnScreen = (options) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(callbackFunction, options);
-    if (containerRef.current) observer.observe(containerRef.current);
+    const containerRefcurrent = containerRef.current;
+    if (containerRefcurrent) observer.observe(containerRefcurrent);
 
     return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
+      if (containerRefcurrent) observer.unobserve(containerRefcurrent);
     };
   }, [containerRef, options]);
 

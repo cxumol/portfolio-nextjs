@@ -3,7 +3,9 @@ import Image from "next/image";
 import "./style.css";
 import MyCard from "./MyCard.jsx";
 import Nav from "./Nav.jsx";
-import OrbCanvas from "./OrbCanvas";
+// import OrbCanvas from "./OrbCanvas";
+import dynamic from "next/dynamic";
+const OrbCanvas = dynamic(() => import("./OrbCanvas"), { ssr: false });
 
 import yaml from "js-yaml";
 const getProj = async () => {
