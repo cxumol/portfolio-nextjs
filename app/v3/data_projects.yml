@@ -21,7 +21,7 @@ items:
         comment: "Why everyone wants to use this app?"
     image: "images/hf-selected.jpg"
     media:
-      png: "media-v3/hf_heart.png"
+      png: "/media-v3/hf_heart.png"
       vid: "media-v3/hf_heart.webm"
     content : "Discover high-quality HuggingFace AI services."
 
@@ -40,7 +40,7 @@ items:
       #     Detailed README instructions.
     image: "images/cloud_bookmark_3.jpg"
     media:
-      png: "media-v3/cloud.png"
+      png: "/media-v3/cloud.png"
       vid: "media-v3/cloud_shake_9fps.webm"
     content : |
       Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
@@ -66,7 +66,7 @@ items:
           Video demo on YouTube (in Chinese).
     image: "images/marble-network-graph.jpg"
     media:
-      png: "media-v3/dyn_net.png"
+      png: "/media-v3/dyn_net.png"
       vid: "media-v3/dyn_net_web.webm"
     content : |
       Enable new insights for readers. 
@@ -84,7 +84,7 @@ items:
           2023 EY Open Science Data Challenge・Certificate of completion
     image: "images/EY-challenge-v2-3.jpg"
     media:
-      png: "media-v3/EY.png"
+      png: "/media-v3/EY.png"
       vid: "media-v3/EY-web.webm"
     content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team."   
     
@@ -99,7 +99,7 @@ items:
           on YouTube
     image: "images/propeller_all_mid.jpg"
     media:
-      png: "media-v3/paddlewheel.png"
+      png: "/media-v3/paddlewheel.png"
       vid: "media-v3/paddlewheel-web.webm"
     content : "Educational CG short video powered by Blender Geometry Nodes."
 
@@ -114,7 +114,7 @@ items:
           ⭐ - Appreciated by **140+** technical professionals on GitHub.
     image: "images/tg_search_169.jpg"
     media:
-      png: "media-v3/tg_search.png"
+      png: "/media-v3/tg_search.png"
       vid: "media-v3/tg_search.webm"
     content : |
       Search Chinese, Japanese, and Thai words offline over Telegram message history
@@ -135,7 +135,7 @@ items:
           Where open-source code meets open-access data.
     image: "images/river_wave.jpg"
     media:
-      png: "media-v3/river.png"
+      png: "/media-v3/river.png"
       vid: "media-v3/river.webm"
     content : |
       Long-term hydrological data of Yangtze River.   
@@ -154,7 +154,7 @@ items:
         #  Read the blog post about how its algorithm is developed and optimized.
     image: "images/typewriter1-wave_beu.jpg"
     media:
-      png: "media-v3/rich2md.png"
+      png: "/media-v3/rich2md.png"
       vid: "media-v3/rich2md.webm"
     content : "A bot who converts Telegram rich text to Markdown."
 
@@ -173,7 +173,7 @@ items:
           Open-source Chinese text segmentation tool on WebAssembly on HTML.
     image: "images/text-highlighter-v2.jpg"
     media:
-      png: "media-v3/term-highlighter.png"
+      png: "/media-v3/term-highlighter.png"
       vid: "media-v3/term-highlighter.webm"
     content : "A terminology highlighter to improve readability on a science website, implementing fast and accurate Chinese text segmentation."
   
