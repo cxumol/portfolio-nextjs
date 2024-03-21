@@ -20,6 +20,9 @@ items:
         link: "https://docs.google.com/presentation/d/1cWZpFPVv41s1snCGEYejx1iicL1CBsHsaH67dNmUgR8/?usp=sharing"
         comment: "Why everyone wants to use this app?"
     image: "images/hf-selected.jpg"
+    media:
+      png: "media-v3/hf_heart.png"
+      vid: "media-v3/hf_heart.webm"
     content : "Discover high-quality HuggingFace AI services."
 
   - title : "URL Link Catalog"
@@ -36,6 +39,9 @@ items:
       #   comment: |
       #     Detailed README instructions.
     image: "images/cloud_bookmark_3.jpg"
+    media:
+      png: "media-v3/cloud.png"
+      vid: "media-v3/cloud_shake_9fps.webm"
     content : |
       Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
     # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge. 
@@ -59,6 +65,9 @@ items:
         comment: |
           Video demo on YouTube (in Chinese).
     image: "images/marble-network-graph.jpg"
+    media:
+      png: "media-v3/dyn_net.png"
+      vid: "media-v3/dyn_net_web.webm"
     content : |
       Enable new insights for readers. 
       Visualize relationships between literary elements using 3D interactive graphs. 
@@ -76,7 +85,7 @@ items:
     image: "images/EY-challenge-v2-3.jpg"
     media:
       png: "media-v3/EY.png"
-      vid: "media-v3/EY.webm"
+      vid: "media-v3/EY-web.webm"
     content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team."   
     
   - title : "Propeller evolution"
@@ -89,6 +98,9 @@ items:
         comment: |
           on YouTube
     image: "images/propeller_all_mid.jpg"
+    media:
+      png: "media-v3/paddlewheel.png"
+      vid: "media-v3/paddlewheel-web.webm"
     content : "Educational CG short video powered by Blender Geometry Nodes."
 
   - title : "tg-search"
@@ -99,8 +111,11 @@ items:
       - label: "GitHub Repo"
         link: "https://github.com/cxumol/tg-search"
         comment: |
-          The Star - Appreciated by **140+** technical professionals on GitHub.
+          ⭐ - Appreciated by **140+** technical professionals on GitHub.
     image: "images/tg_search_169.jpg"
+    media:
+      png: "media-v3/tg_search.png"
+      vid: "media-v3/tg_search.webm"
     content : |
       Search Chinese, Japanese, and Thai words offline over Telegram message history
     # , using browser-native HTML/CSS/JavaScript and working offline without external dependencies.
@@ -135,9 +150,12 @@ items:
       - label: "Blog Post"
         link: "https://xirtam.cxumol.com/tg-to-md/"
         comment: |
-          Algorithm explained.
+          Where its algorithm is explained.
         #  Read the blog post about how its algorithm is developed and optimized.
     image: "images/typewriter1-wave_beu.jpg"
+    media:
+      png: "media-v3/rich2md.png"
+      vid: "media-v3/rich2md.webm"
     content : "A bot who converts Telegram rich text to Markdown."
 
   - title : "Terminology Highlighter"
@@ -154,6 +172,9 @@ items:
         comment: |
           Open-source Chinese text segmentation tool on WebAssembly on HTML.
     image: "images/text-highlighter-v2.jpg"
+    media:
+      png: "media-v3/term-highlighter.png"
+      vid: "media-v3/term-highlighter.webm"
     content : "A terminology highlighter to improve readability on a science website, implementing fast and accurate Chinese text segmentation."
   
   - title : "Portfolio Websites"
@@ -169,9 +190,11 @@ items:
         link:  "#"
         comment: |
           You are already here.
-      - label: "Earlier Portfolio Version"
-        link:  "https://st-professional-hugo.netlify.app/"
+      - label: "Earlier version V2"
+        link:  "/v2"
+      - label: "Earlier version V1"
+        link:  "/v1"
         comment: |
-          A previous version of my portfolio made with Hugo.
+          Explore earlier versions of my portfolio.
     image: "images/portfolio-website-rgba-v2.png"
     content : "**Congrats!** You've gone through my portfolio built with modern front-end workflow. Hope you had a fun time."

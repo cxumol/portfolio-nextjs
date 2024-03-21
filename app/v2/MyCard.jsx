@@ -13,17 +13,33 @@ const bgClear = bgClearGray;
 
 function buttonGroups(buttons) {
   // console.log(buttons);
-  return buttons.map((btn) => (
-    <div className="link-item" key={btn.label}>
-      <a
-        className="border border-solid border-gray-300 btn glass"
-        href={btn.link}
-      >
-        {btn.label}
-      </a>
-      <Markdown className={bgClear}>{btn.comment}</Markdown>
-    </div>
-  ));
+  return buttons.map((btn) => {
+    if (btn.link.startsWith("javascript:")) {
+      return (
+        <div className="link-item" key={btn.label}>
+          <button
+            className="border border-solid border-grey-500 hover:border-black btn glass"
+            onClick={new Function(btn.link.substring(11))}
+          >
+            {btn.label}
+          </button>
+          <Markdown className={bgClear}>{btn.comment}</Markdown>
+        </div>
+      );
+    } else {
+      return (
+        <div className="link-item" key={btn.label}>
+          <a
+            className="border border-solid border-gray-300 btn glass"
+            href={btn.link}
+          >
+            {btn.label}
+          </a>
+          <Markdown className={bgClear}>{btn.comment}</Markdown>
+        </div>
+      );
+    }
+  });
 }
 function badgeGroups(keywords) {
   // console.log(buttons);

@@ -119,9 +119,10 @@ export default function MyCard({ data, isEven }) {
       text-black prose lg:prose-lg
       `}
       >
-        <h2 className="text-inherit font-serif dark:text-white">
-          ❖ {data.title}
-        </h2>
+        <h1 className="text-inherit  dark:text-white">
+          {/* font-serif */}
+          {data.title}
+        </h1>
         {badgeGroups(data.keywords)}
         {/* <p> */}
         <Markdown className={bgClear}>{data.content}</Markdown>

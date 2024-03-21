@@ -23,14 +23,15 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
     });
 
     const updateFrame = () => {
-      const delta = Math.abs(window.scrollY - lastScrollY);
+      // const delta = Math.abs(window.scrollY - lastScrollY);
+      const delta = window.scrollY - lastScrollY;
       lastScrollY = window.scrollY;
 
       if (video && videoDuration) {
         let newVidTime = (video.currentTime + delta * 0.01) % videoDuration;
-        // if (newVidTime < 0) {
-        //   newVidTime += videoDuration;
-        // }
+        if (newVidTime < 0) {
+          newVidTime += videoDuration;
+        }
         video.currentTime = newVidTime;
       }
     };
@@ -60,10 +61,22 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
 
   if (isSafari || isIOS) {
     return (
-      <Image src={imgUrl} alt="Opps! Steve Jobs prevent you from animation" />
+      <Image
+        src={imgUrl}
+        alt="Opps! Steve Jobs prevent you from animation"
+        style={{ maxWidth: "480px", margin: "0 auto" }}
+      />
     );
   } else {
-    return <video ref={videoRef} loop muted playsInline />;
+    return (
+      <video
+        ref={videoRef}
+        loop
+        muted
+        playsInline
+        style={{ maxWidth: "480px", margin: "0 auto" }}
+      />
+    );
   }
 };
 

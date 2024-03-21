@@ -7,6 +7,13 @@ import Nav from "./Nav.jsx";
 import dynamic from "next/dynamic";
 const OrbCanvas = dynamic(() => import("./OrbCanvas"), { ssr: false });
 
+import { Gentium_Book_Plus } from "next/font/google";
+const gentium = Gentium_Book_Plus({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 import yaml from "js-yaml";
 const getProj = async () => {
   try {
@@ -65,6 +72,30 @@ const badges = () => {
   ));
 };
 
+const SummaryIntroCollapse = () => {
+  return (
+    <div tabIndex={0} className="collapse	bg-base-200">
+      <div className="collapse-title text-xl font-medium flex items-center">
+        <SvgAlert />
+        <span>&nbsp; &#9; Who is S. T.?</span>
+      </div>
+      <div className="collapse-content">
+        <p className="alert m-2 bg-base-300 base-content">
+          A fresh grad (Master of Science, 2023) seeking opportunities to work.
+        </p>
+        {/* <p className="alert">
+            A passionate life-time learner in multile displinaries.
+          </p> */}
+        <p className="alert m-2 bg-base-300 base-content">
+          A practitioner and learner who is enthusiastic about technology and
+          committed to delivering exceptional results.
+        </p>
+        {badges()}
+      </div>
+    </div>
+  );
+};
+
 export default async function Home() {
   const proj = await getProj();
   // const toc = proj.map();
@@ -73,33 +104,16 @@ export default async function Home() {
     alertContent: "",
   };
   return (
-    <main className="flex flex-col min-h-screen items-center justify-between md:px-4 sm:px-4 lg:px-48 py-4">
+    <main
+      className={`flex flex-col min-h-screen items-center justify-between md:px-4 sm:px-4 lg:px-48 py-4 ${gentium.className}`}
+    >
       <OrbCanvas />
 
       <Nav toc={proj["items"]} />
 
       <p className="pt-12 placeHolder "></p>
 
-      <div tabIndex={0} className="collapse bg-base-100">
-        <div className="collapse-title text-xl font-medium flex items-center">
-          <SvgAlert />
-          <span>&nbsp; &#9; Who is S. T.?</span>
-        </div>
-        <div className="collapse-content">
-          <p className="alert m-2 bg-base-200">
-            A fresh grad (Master of Science, 2023) seeking opportunities to
-            work.
-          </p>
-          {/* <p className="alert">
-            A passionate life-time learner in multile displinaries.
-          </p> */}
-          <p className="alert m-2 bg-base-200">
-            A practitioner and learner who is enthusiastic about technology and
-            committed to delivering exceptional results.
-          </p>
-          {badges()}
-        </div>
-      </div>
+      <SummaryIntroCollapse />
 
       <div className="divider h-full text-xl font-sans font-semibold italic antialiased">
         {/* Projects&nbsp; 
