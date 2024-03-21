@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/v1"
-  to = "https://example.netlify.app/"
+  to = "https://st-professional-hugo.netlify.app/"
   status = 301
   force = true
