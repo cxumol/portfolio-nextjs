@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/"
+  to = "/v3"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/v1"
+  to = "https://example.netlify.app/"
+  status = 301
+  force = true
