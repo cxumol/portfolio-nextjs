@@ -18,7 +18,7 @@ function buttonGroups(buttons) {
       return (
         <div className="link-item" key={btn.label}>
           <button
-            className="border border-solid border-grey-500 hover:border-black btn glass"
+            className="border border-solid border-grey-500 hover:border-black btn glass dark:text-secondary-content"
             onClick={new Function(btn.link.substring(11))}
           >
             {btn.label}
@@ -30,7 +30,7 @@ function buttonGroups(buttons) {
       return (
         <div className="link-item" key={btn.label}>
           <a
-            className="border border-solid border-grey-500 hover:border-black btn glass"
+            className="border border-solid border-grey-500 hover:border-black btn glass dark:text-secondary-content"
             href={btn.link}
           >
             {btn.label}
