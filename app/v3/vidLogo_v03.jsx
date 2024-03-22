@@ -19,44 +19,41 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
       source.type = "video/webm";
       video.appendChild(source);
 
-      // lower playbackConst = faster playback
-      const playbackConst = 800;
+      let lastScrollY = window.scrollY;
       let videoDuration;
-      let lastScrollPosition = -1;
-      let animatedKilled = false;
-
-      const animate = () => {
-        window.requestAnimationFrame(scrollPlay);
-      };
 
       video.addEventListener("loadedmetadata", () => {
         videoDuration = video.duration;
       });
 
-      const scrollPlay = () => {
-        if (animatedKilled) return;
-        if (lastScrollPosition != window.scrollY) {
-          window.removeEventListener("scroll", animate);
-          const frameNumber = (window.scrollY / playbackConst) % videoDuration;
-          if (frameNumber >= 0) videoRef.current.currentTime = frameNumber;
-          lastScrollPosition = window.scrollY;
-          animate();
-        } else {
-          window.addEventListener("scroll", animate);
+      const updateFrame = () => {
+        const delta = window.scrollY - lastScrollY;
+        lastScrollY = window.scrollY;
+
+        if (video && videoDuration) {
+          let newVidTime = (video.currentTime + delta * 0.01) % videoDuration;
+          if (newVidTime < 0) {
+            newVidTime += videoDuration;
+          }
+          video.currentTime = newVidTime;
         }
       };
-      const debounceScrollPlay = () => {
-        // Clear the previous timeout to prevent immediate execution
-        clearTimeout(debounceTimeout);
-        // Set a new timeout to call scrollPlay after 100ms of inactivity
-        debounceTimeout = setTimeout(scrollPlay, 100);
-      };
 
-      animate();
+      window.addEventListener("scroll", updateFrame, { passive: true });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.currentTime = 0;
+          }
+        });
+      });
+
+      observer.observe(video);
 
       return () => {
-        window.removeEventListener("scroll", animate);
-        animatedKilled = true;
+        window.removeEventListener("scroll", updateFrame);
+        observer.unobserve(video);
       };
     }
   }, [vidUrl, shouldUseImage]);
@@ -70,7 +67,6 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
         playsInline
         style={{
           maxWidth: "480px",
-          maxHeight: "480px",
           margin: "0 auto",
           display: shouldUseImage ? "none" : "block",
         }}
