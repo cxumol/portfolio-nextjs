@@ -50,7 +50,13 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
 
   if (isSafari || isIOS) {
     // 在iOS/Safari中显示png图片
-    return <Image src={imgUrl} alt="Animation Unavailable due to Steve Jobs" />;
+    return (
+      <Image
+        src={imgUrl}
+        quality={100}
+        alt="Animation Unavailable due to Steve Jobs"
+      />
+    );
   } else {
     return <video ref={videoRef} loop muted playsInline />;
   }

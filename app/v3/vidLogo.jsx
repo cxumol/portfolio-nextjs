@@ -75,9 +75,10 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
         <Image
           src={imgUrl}
           alt="Oops! Steve Jobs prevents you from animation"
+          quality={100}
           width={480}
-          height={360} // Specify the dimensions of the image to prevent layout shift
-          style={{ maxWidth: "480px", margin: "0 auto" }}
+          height={480}
+          style={{ maxWidth: "480px", maxHeight: "480px", margin: "0 auto" }}
         />
       )}
     </>
