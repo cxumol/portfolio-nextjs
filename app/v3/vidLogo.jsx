@@ -69,8 +69,8 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
         muted
         playsInline
         style={{
-          maxWidth: "480px",
-          maxHeight: "480px",
+          maxWidth: "min(480px, 80vw)",
+          maxHeight: "min(480px, 80vh)",
           margin: "0 auto",
           display: shouldUseImage ? "none" : "block",
         }}
@@ -82,7 +82,11 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
           quality={100}
           width={480}
           height={480}
-          style={{ maxWidth: "480px", maxHeight: "480px", margin: "0 auto" }}
+          style={{
+            maxWidth: "min(480px, 80vw)",
+            maxHeight: "min(480px, 80vh)",
+            margin: "0 auto",
+          }}
         />
       )}
     </>
