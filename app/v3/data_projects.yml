@@ -42,8 +42,8 @@ items:
     image: "images/cloud_bookmark_3.jpg"
     media:
       png: "/media-v3/cloud.png"
-      vid: "media-v3/cloud_shake_5fps.webm"
-      mov: "media-v3/cloud_shake_5fps.mov"
+      vid: "media-v3/cloud_shake_9fps.webm"
+      mov: "media-v3/cloud_5fps.mov"
     content : |
       Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
     # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge. 
