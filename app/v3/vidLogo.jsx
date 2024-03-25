@@ -28,7 +28,11 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
       const appleHEVCAlpha = isIOS || isSafari;
       if (appleHEVCAlpha) {
         source.src = movUrl;
-        source.type = "video/quicktime";
+        source.type = 'video/mp4; codecs="hvc1"';
+        // source.type = window.undefined;
+        // delete source.type;
+
+        // video.src =  movUrl;
       }
       video.appendChild(source);
 
