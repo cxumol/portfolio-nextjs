@@ -58,6 +58,7 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
           window.addEventListener("scroll", animate);
         }
       };
+      // no need to debounce, kept for reference
       const debounceScrollPlay = () => {
         // Clear the previous timeout to prevent immediate execution
         clearTimeout(debounceTimeout);
@@ -72,7 +73,7 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
         animatedKilled = true;
       };
     }
-  }, [vidUrl, shouldUseImage]);
+  }, [vidUrl]);
 
   return (
     <>
