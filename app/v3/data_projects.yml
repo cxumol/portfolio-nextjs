@@ -23,6 +23,7 @@ items:
     media:
       png: "/media-v3/hf_heart.png"
       vid: "media-v3/hf_heart.webm"
+      mov: "media-v3/hf_heart.mov"
     content : "Discover high-quality HuggingFace AI services."
 
   - title : "URL Link Catalog"
@@ -41,7 +42,8 @@ items:
     image: "images/cloud_bookmark_3.jpg"
     media:
       png: "/media-v3/cloud.png"
-      vid: "media-v3/cloud_shake_9fps.webm"
+      vid: "media-v3/cloud_shake_5fps.webm"
+      mov: "media-v3/cloud_shake_5fps.mov"
     content : |
       Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
     # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge. 
@@ -68,6 +70,7 @@ items:
     media:
       png: "/media-v3/dyn_net.png"
       vid: "media-v3/dyn_net_web.webm"
+      mov: "media-v3/dyn_net_web.mov"
     content : |
       Enable new insights for readers. 
       Visualize relationships between literary elements using 3D interactive graphs. 
@@ -86,6 +89,7 @@ items:
     media:
       png: "/media-v3/EY.png"
       vid: "media-v3/EY-web.webm"
+      mov: "media-v3/EY-web.mov"
     content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team."   
     
   - title : "Propeller evolution"
@@ -101,6 +105,7 @@ items:
     media:
       png: "/media-v3/paddlewheel.png"
       vid: "media-v3/paddlewheel-web.webm"
+      mov: "media-v3/paddlewheel-web.mov"
     content : "Educational CG short video powered by Blender Geometry Nodes."
 
   - title : "tg-search"
@@ -116,6 +121,7 @@ items:
     media:
       png: "/media-v3/tg_search.png"
       vid: "media-v3/tg_search.webm"
+      mov: "media-v3/tg_search.mov"
     content : |
       Search Chinese, Japanese, and Thai words offline over Telegram message history
     # , using browser-native HTML/CSS/JavaScript and working offline without external dependencies.
@@ -137,6 +143,7 @@ items:
     media:
       png: "/media-v3/river.png"
       vid: "media-v3/river.webm"
+      mov: "media-v3/river.mov"
     content : |
       Long-term hydrological data of Yangtze River.   
       Real-time data collection and visualization.
@@ -156,6 +163,7 @@ items:
     media:
       png: "/media-v3/rich2md.png"
       vid: "media-v3/rich2md.webm"
+      mov: "media-v3/rich2md.mov"
     content : "A bot who converts Telegram rich text to Markdown."
 
   - title : "Terminology Highlighter"
@@ -175,6 +183,7 @@ items:
     media:
       png: "/media-v3/term-highlighter.png"
       vid: "media-v3/term-highlighter.webm"
+      mov: "media-v3/term-highlighter.mov"
     content : "A terminology highlighter to improve readability on a science website, implementing fast and accurate Chinese text segmentation."
   
   - title : "Portfolio Websites"

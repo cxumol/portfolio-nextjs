@@ -1,22 +1,35 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { isSafari, isIOS } from "react-device-detect";
+import { isSafari, isIOS, osVersion, isMacOs } from "react-device-detect";
 import Image from "next/image";
 
-const VideoScroll = ({ vidUrl, imgUrl }) => {
+const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
   const videoRef = useRef(null);
   const [shouldUseImage, setShouldUseImage] = useState(false);
 
   useEffect(() => {
     // Determine if the fallback image should be used based on the browser
-    setShouldUseImage(isSafari || isIOS);
+    const mediaCapatible = !!(
+      navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo
+    );
+    const osVer = osVersion.split(".");
+    const noVid =
+      (isIOS && osVer[0] < 13) ||
+      (isSafari && !mediaCapatible) ||
+      (isMacOs && Number(`${osVer[0]}.${osVer[1]}`) < 10.15);
+    setShouldUseImage(noVid);
 
     // Proceed with video setup only if the video is to be used
-    if (!(isSafari || isIOS)) {
+    if (!noVid) {
       const video = videoRef.current;
       const source = document.createElement("source");
       source.src = vidUrl;
       source.type = "video/webm";
+      const appleHEVCAlpha = isIOS || isSafari;
+      if (appleHEVCAlpha) {
+        source.src = movUrl;
+        source.type = "video/quicktime";
+      }
       video.appendChild(source);
 
       // lower playbackConst = faster playback
@@ -49,7 +62,7 @@ const VideoScroll = ({ vidUrl, imgUrl }) => {
         // Clear the previous timeout to prevent immediate execution
         clearTimeout(debounceTimeout);
         // Set a new timeout to call scrollPlay after 100ms of inactivity
-        debounceTimeout = setTimeout(scrollPlay, 100);
+        debounceTimeout = setTimeout(scrollPlay, 60);
       };
 
       animate();

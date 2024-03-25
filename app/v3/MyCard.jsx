@@ -104,6 +104,7 @@ export default function MyCard({ data, isEven }) {
           className="logo order-1 md:order-none"
           imgUrl={data.media.png}
           vidUrl={data.media.vid}
+          movUrl={data.media.mov}
         />
       ) : (
         ""
