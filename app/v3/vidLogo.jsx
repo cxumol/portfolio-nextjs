@@ -38,7 +38,7 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
 
       // lower playbackConst = faster playback
       const playbackConst = 800;
-      let videoDuration;
+      let videoDuration = 0;
       let lastScrollPosition = -1;
       let animatedKilled = false;
 
