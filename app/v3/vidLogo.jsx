@@ -25,6 +25,7 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
       const source = document.createElement("source");
       source.src = vidUrl;
       source.type = "video/webm";
+      // const appleHEVCAlpha = isIOS || isSafari;
       const appleHEVCAlpha = isIOS || isSafari;
       if (appleHEVCAlpha) {
         source.src = movUrl;
@@ -35,6 +36,8 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
         // video.src =  movUrl;
       }
       video.appendChild(source);
+      const iosFix = isIOS;
+      if (iosFix) video.autoplay = "";
 
       // lower playbackConst = faster playback
       const playbackConst = 800;
