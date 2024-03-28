@@ -86,6 +86,7 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
         loop
         muted
         playsInline
+        poster={imgUrl}
         style={{
           maxWidth: "min(480px, 80vw)",
           maxHeight: "min(480px, 80vh)",
