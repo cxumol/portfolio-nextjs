@@ -37,7 +37,10 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
       }
       video.appendChild(source);
       const iosFix = isIOS;
-      if (iosFix) video.autoplay = "";
+      if (iosFix) {
+        video.setAttribute("src", movUrl);
+        video.setAttribute("autoplay", "");
+      }
 
       // lower playbackConst = faster playback
       const playbackConst = 800;
