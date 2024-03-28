@@ -40,6 +40,7 @@ const VideoScroll = ({ vidUrl, imgUrl, movUrl }) => {
       if (iosFix) {
         video.setAttribute("src", movUrl);
         video.setAttribute("autoplay", "");
+        return () => {};
       }
 
       // lower playbackConst = faster playback
