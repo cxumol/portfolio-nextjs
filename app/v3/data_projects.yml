@@ -7,6 +7,25 @@ items_style: ""
 items:
   # feature item loop
 
+  - title : "CoverPilot"
+    id: "cover-pilot"
+    style : "style1 medium onscroll-content-fade-right" # color4
+    keywords: ["Python", "Gradio", "AI", "LLM", "Prompt Engineering", "AI Agents", "Interactive", "Web App", "Hugging Face"]
+    buttons: 
+      - label: "Try Now"
+        link: "https://huggingface.co/spaces/cxumol/CoverPilot"
+        comment: |
+          Bring your résumé, job description and API Key, and let AI write the best cover letter for you, instantly accessible on Hugging Face platform.
+      - label: "GitHub Repo"
+        link: "https://github.com/cxumol/CoverPilot"
+        comment: "Open-source AI cover letter outperforms paid alternative services."
+    image: "/media-v3/hat_envelope.png"
+    media:
+      png: "/media-v3/hat_envelope.png"
+      vid: "/media-v3/hat_envelope_v0.webm"
+      mov: "/media-v3/hat_envelope_v0.mov"
+    content : "AI-powered cover letter generator"
+
   - title : "Admired AI APIs"
     id: "admired-ai"
     style : "style1 medium onscroll-content-fade-right" # color4
