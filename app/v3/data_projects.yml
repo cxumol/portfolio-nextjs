@@ -1,4 +1,4 @@
-title : "Featured Projects"
+title: "Featured Projects"
 id: "Projects"
 # content: |
 #   Personal Projects Demo
@@ -7,11 +7,22 @@ items_style: ""
 items:
   # feature item loop
 
-  - title : "CoverPilot"
+  - title: "CoverPilot"
     id: "cover-pilot"
-    style : "style1 medium onscroll-content-fade-right" # color4
-    keywords: ["Python", "Gradio", "AI", "LLM", "Prompt Engineering", "AI Agents", "Interactive", "Web App", "Hugging Face"]
-    buttons: 
+    style: "style1 medium onscroll-content-fade-right" # color4
+    keywords:
+      [
+        "Python",
+        "Gradio",
+        "AI",
+        "LLM",
+        "Prompt Engineering",
+        "AI Agents",
+        "Interactive",
+        "Web App",
+        "Hugging Face",
+      ]
+    buttons:
       - label: "Try Now"
         link: "https://huggingface.co/spaces/cxumol/CoverPilot"
         comment: |
@@ -24,13 +35,14 @@ items:
       png: "/media-v3/hat_envelope.png"
       vid: "/media-v3/hat_envelope_v0.webm"
       mov: "/media-v3/hat_envelope_v0.mov"
-    content : "AI-powered cover letter generator"
+    content: "AI-powered cover letter generator"
 
-  - title : "Admired AI APIs"
+  - title: "Admired AI APIs"
     id: "admired-ai"
-    style : "style1 medium onscroll-content-fade-right" # color4
-    keywords: ["Python", "TypeScript", "Go", "PostgreSQL", "Redis", "Deno", "Web App"]
-    buttons: 
+    style: "style1 medium onscroll-content-fade-right" # color4
+    keywords:
+      ["Python", "TypeScript", "Go", "PostgreSQL", "Redis", "Deno", "Web App"]
+    buttons:
       - label: "Hug Me"
         link: "https://db-hfspace-91.deno.dev/query"
         comment: |
@@ -43,13 +55,13 @@ items:
       png: "/media-v3/hf_heart.png"
       vid: "/media-v3/hf_heart.webm"
       mov: "/media-v3/hf_heart.mov"
-    content : "Discover high-quality HuggingFace AI services."
+    content: "Discover high-quality HuggingFace AI services."
 
-  - title : "URL Link Catalog"
-    id : "urlinkcat"
-    style : "style1 major invert orient-right onscroll-content-fade-right" # color5
+  - title: "URL Link Catalog"
+    id: "urlinkcat"
+    style: "style1 major invert orient-right onscroll-content-fade-right" # color5
     keywords: ["SvelteJS", "Cloudflare", "Serverless", "KV Database", "Web App"]
-    buttons: 
+    buttons:
       - label: "Try now"
         link: "https://urlinkcat.pages.dev/#demo"
         comment: |
@@ -63,20 +75,30 @@ items:
       png: "/media-v3/cloud.png"
       vid: "/media-v3/cloud_shake_9fps.webm"
       mov: "/media-v3/cloud_5fps.mov"
-    content : |
+    content: |
       Access and manage your bookmark anywhere and anytime. Multi-user. Cloud sync.
-    # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge. 
+    # A free, open-source, fully customizable, multi-user, cloud-synced and easy-to-use bookmark web application for collaborative online bookmarking that can be shared publicly. Winner of the Cloudflare Developer Summer Challenge.
 
-  - title : "Entity Network Graphs"
+  - title: "Entity Network Graphs"
     id: "ngraph"
-    style : "style1 major onscroll-content-fade-left" # color1
-    keywords: ["WebGL", "THREE.js", "Data Visualization", "Interactive", "Literature", "NLP", "Graph Theory", "Web App"]
-    buttons: 
+    style: "style1 major onscroll-content-fade-left" # color1
+    keywords:
+      [
+        "WebGL",
+        "THREE.js",
+        "Data Visualization",
+        "Interactive",
+        "Literature",
+        "NLP",
+        "Graph Theory",
+        "Web App",
+      ]
+    buttons:
       - label: "Explore books"
         link: "https://urlinkcat.pages.dev/#e-ngraph-official"
         comment: |
-          Play with books in English (US & UK) and Chinese (Traditional & Simplified). 
-        #  Click here to check out the collection page of 3D interactive graphs available in books written in English (US & UK) as well as Chinese (Traditional & Simplified). 
+          Play with books in English (US & UK) and Chinese (Traditional & Simplified).
+        #  Click here to check out the collection page of 3D interactive graphs available in books written in English (US & UK) as well as Chinese (Traditional & Simplified).
         # <br> N.B. Just click any icon on the collection page.
       - label: "Slide Show"
         link: "https://docs.google.com/presentation/d/1m962XA3_1IPe46uxF9gEBOtUw8dIdHNhaKPQ9TGVGs8/?usp=sharing"
@@ -90,16 +112,24 @@ items:
       png: "/media-v3/dyn_net.png"
       vid: "/media-v3/dyn_net_web.webm"
       mov: "/media-v3/dyn_net_web.mov"
-    content : |
+    content: |
       Enable new insights for readers. 
-      Visualize relationships between literary elements using 3D interactive graphs. 
+      Visualize relationships between literary elements using 3D interactive graphs.
 
-  - title : "EY Data Challenge"
+  - title: "EY Data Challenge"
     id: "ey-challenge"
-    style : "style1 medium invert orient-right onscroll-content-fade-right"
-    # onscroll-fade-in 
-    keywords: ["Teamwork", "Remote Sensing", "Data Processing", "Data Analysis", "Regression","Contest"]
-    buttons: 
+    style: "style1 medium invert orient-right onscroll-content-fade-right"
+    # onscroll-fade-in
+    keywords:
+      [
+        "Teamwork",
+        "Remote Sensing",
+        "Data Processing",
+        "Data Analysis",
+        "Regression",
+        "Contest",
+      ]
+    buttons:
       - label: "Details"
         link: "https://challenge.ey.com/challenges/level-2-crop-forecasting-qEk17wFWyq"
         comment: |
@@ -109,13 +139,21 @@ items:
       png: "/media-v3/EY.png"
       vid: "/media-v3/EY-web.webm"
       mov: "/media-v3/EY-web.mov"
-    content : "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team."   
-    
-  - title : "Propeller evolution"
-    id : "propeller"
-    style : "style1 major image-position-center onscroll-content-fade-left" #color7
-    keywords: ["3D Modeling", "Procedual Modeling", "Animation", "Blender", "Geometry Node", "Video Production" ]
-    buttons: 
+    content: "Contributed to a rice crop yield regression model by retrieving and filtering radar and satellite data from Planetary Computer and discussing modeling approaches with team."
+
+  - title: "Propeller evolution"
+    id: "propeller"
+    style: "style1 major image-position-center onscroll-content-fade-left" #color7
+    keywords:
+      [
+        "3D Modeling",
+        "Procedual Modeling",
+        "Animation",
+        "Blender",
+        "Geometry Node",
+        "Video Production",
+      ]
+    buttons:
       - label: "Video"
         link: "https://www.youtube.com/watch?v=TARskVoL9QM"
         comment: |
@@ -125,37 +163,46 @@ items:
       png: "/media-v3/paddlewheel.png"
       vid: "/media-v3/paddlewheel-web.webm"
       mov: "/media-v3/paddlewheel-web.mov"
-    content : "Educational CG short video powered by Blender Geometry Nodes."
+    content: "Educational CG short video powered by Blender Geometry Nodes."
 
-  - title : "tg-search"
+  - title: "tg-search"
     id: "tg-search"
-    style : "style1 major invert orient-right invert onscroll-content-fade-right" #color6
+    style: "style1 major invert orient-right invert onscroll-content-fade-right" #color6
     keywords: ["Influencial", "Early Works", "Offline", "Web App"]
-    buttons: 
+    buttons:
       - label: "GitHub Repo"
         link: "https://github.com/cxumol/tg-search"
         comment: |
-          ⭐ - Appreciated by **140+** technical professionals on GitHub.
+          ⭐ - Appreciated by **150+** technical professionals on GitHub.
     image: "images/tg_search_169.jpg"
     media:
       png: "/media-v3/tg_search.png"
       vid: "/media-v3/tg_search.webm"
       mov: "/media-v3/tg_search.mov"
-    content : |
+    content: |
       Search Chinese, Japanese, and Thai words offline over Telegram message history
     # , using browser-native HTML/CSS/JavaScript and working offline without external dependencies.
 
-  - title : "LongRiver"
+  - title: "LongRiver"
     id: "long-river"
-    style : "style1 major onscroll-content-fade-left" #color1
-    keywords: ["Python", "HTML/CSS/JS", "Data Collection", "Data Visualization", "Up-to-date", "Public Welfare", "Web Service"]
-    buttons: 
+    style: "style1 major onscroll-content-fade-left" #color1
+    keywords:
+      [
+        "Python",
+        "HTML/CSS/JS",
+        "Data Collection",
+        "Data Visualization",
+        "Up-to-date",
+        "Public Welfare",
+        "Web Service",
+      ]
+    buttons:
       - label: "Online Service"
-        link:  "https://cxumol.github.io/LongRiver/"
+        link: "https://cxumol.github.io/LongRiver/"
         comment: |
           Observe the hydrological history of Yangtze River here.
       - label: "GitHub Repo"
-        link:  "https://github.com/cxumol/LongRiver"
+        link: "https://github.com/cxumol/LongRiver"
         comment: |
           Where open-source code meets open-access data.
     image: "images/river_wave.jpg"
@@ -163,16 +210,16 @@ items:
       png: "/media-v3/river.png"
       vid: "/media-v3/river.webm"
       mov: "/media-v3/river.mov"
-    content : |
+    content: |
       Long-term hydrological data of Yangtze River.   
       Real-time data collection and visualization.
-    # An open source online service to provide accessible 
+    # An open source online service to provide accessible
 
-  - title : "Tg2md Bot"
+  - title: "Tg2md Bot"
     id: "tg-md"
-    style : "style1 major  invert orient-right onscroll-content-fade-right" #color4
+    style: "style1 major  invert orient-right onscroll-content-fade-right" #color4
     keywords: ["Algorithm", "Text Processing", "Chatbot"]
-    buttons: 
+    buttons:
       - label: "Blog Post"
         link: "https://xirtam.cxumol.com/tg-to-md/"
         comment: |
@@ -183,19 +230,27 @@ items:
       png: "/media-v3/rich2md.png"
       vid: "/media-v3/rich2md.webm"
       mov: "/media-v3/rich2md.mov"
-    content : "A bot who converts Telegram rich text to Markdown."
+    content: "A bot who converts Telegram rich text to Markdown."
 
-  - title : "Terminology Highlighter"
+  - title: "Terminology Highlighter"
     id: "term-highlighter"
-    style : "style1 major onscroll-content-fade-left"
-    keywords: ["WebAssembly", "DOM manipulation", "NLP","JavaScript", "Python", "Feature"]
-    buttons: 
+    style: "style1 major onscroll-content-fade-left"
+    keywords:
+      [
+        "WebAssembly",
+        "DOM manipulation",
+        "NLP",
+        "JavaScript",
+        "Python",
+        "Feature",
+      ]
+    buttons:
       - label: "Example article"
-        link:  "https://pattern.swarma.org/article/132"
+        link: "https://pattern.swarma.org/article/132"
         comment: |
           Read an example article using our highlighter.
       - label: "GitHub Repo"
-        link:  "https://github.com/cxumol/jieba-wasm-html"
+        link: "https://github.com/cxumol/jieba-wasm-html"
         comment: |
           Open-source Chinese text segmentation tool on WebAssembly on HTML.
     image: "images/text-highlighter-v2.jpg"
@@ -203,26 +258,26 @@ items:
       png: "/media-v3/term-highlighter.png"
       vid: "/media-v3/term-highlighter.webm"
       mov: "/media-v3/term-highlighter.mov"
-    content : "A terminology highlighter to improve readability on a science website, implementing fast and accurate Chinese text segmentation."
-  
-  - title : "Portfolio Websites"
+    content: "A terminology highlighter to improve readability on a science website, implementing fast and accurate Chinese text segmentation."
+
+  - title: "Portfolio Websites"
     id: "this-portfolio"
     # style : "style1 major onscroll-content-fade-left"
     keywords: ["React", "Next.js", "TailWind CSS", "Hugo", "Website"]
-    buttons: 
+    buttons:
       - label: "Email"
-        link:  "javascript:alert('Email address is redacted for privacy concerns. Please find my email address on resume. Thanks.')"
+        link: "javascript:alert('Email address is redacted for privacy concerns. Please find my email address on resume. Thanks.')"
         comment: |
-          Don't hesitate to email me if you consider hiring me. 
+          Don't hesitate to email me if you consider hiring me.
       - label: "This Website"
-        link:  "#"
+        link: "#"
         comment: |
           You are already here.
       - label: "Earlier version V2"
-        link:  "/v2"
+        link: "/v2"
       - label: "Earlier version V1"
-        link:  "/v1"
+        link: "/v1"
         comment: |
           Explore earlier versions of my portfolio.
     image: "images/portfolio-website-rgba-v2.png"
-    content : "**Congrats!** You've gone through my portfolio built with modern front-end workflow. Hope you had a fun time."
+    content: "**Congrats!** You've gone through my portfolio built with modern front-end workflow. Hope you had a fun time."
