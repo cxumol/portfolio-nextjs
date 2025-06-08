@@ -7,6 +7,49 @@ items_style: ""
 items:
   # feature item loop
 
+  - title: "AI Apps Collection"
+    id: "ai-apps-collection"
+    style: "style1 medium onscroll-content-fade-right"
+    keywords:
+      ["Applications", "Collection", "HTML", "Portfolio", "Generative AI"]
+    buttons:
+      - label: "Explore AI Apps"
+        link: "https://urlinkcat.pages.dev/#demo-ai-apps"
+        comment: "The collection page is made on top of my another project URLinkCat."
+    image: "/media-v3/onnx.png"
+    media:
+      png: "/media-v3/onnx.png"
+      vid: "/media-v3/onnx_3d.webm"
+      mov: "/media-v3/onnx_3d.mp4"
+    content: "Apps Made of AI, by AI _(and me)_, for AI"
+
+  - title: "ChartHN"
+    id: "charthn"
+    style: "style1 medium onscroll-content-fade-right"
+    keywords:
+      [
+        "Hacker News",
+        "AI",
+        "LLM",
+        "Diagrams",
+        "Daily Digest",
+        "Summary",
+        "Web App",
+      ]
+    buttons:
+      - label: "View Diagrams"
+        link: "https://cxumol.github.io/chartHN/"
+        comment: "Explore Hacker News' daily top 10 articles presented visually."
+      - label: "GitHub Repo"
+        link: "https://github.com/cxumol"
+        comment: "Understand the methodology behind ChartHN's data visualization."
+    image: "/media-v3/diagram.png"
+    media:
+      png: "/media-v3/diagram.png"
+      vid: "/media-v3/diagram_3d.webm"
+      mov: "/media-v3/diagram_3d.mov"
+    content: "Hacker News' daily top 10, but in diagrams"
+
   - title: "CoverPilot"
     id: "cover-pilot"
     style: "style1 medium onscroll-content-fade-right" # color4
