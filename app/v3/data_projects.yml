@@ -41,8 +41,8 @@ items:
         link: "https://cxumol.github.io/chartHN/"
         comment: "Explore Hacker News' daily top 10 articles presented visually."
       - label: "GitHub Repo"
-        link: "https://github.com/cxumol"
-        comment: "Understand the methodology behind ChartHN's data visualization."
+        link: "https://github.com/cxumol/chartHN"
+        comment: "Understand the data processing pipeline behind ChartHN."
     image: "/media-v3/diagram.png"
     media:
       png: "/media-v3/diagram.png"
